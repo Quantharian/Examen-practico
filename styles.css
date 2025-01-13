@@ -1,0 +1,120 @@
+body {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    font-family: 'Overpass', san serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+    background-color: hsl(216, 12%, 8%);
+    color: hsl(217, 12%, 63%);
+
+    .globalContainer,
+    .secondaryContainer {
+        background-color: hsl(213, 19%, 18%);
+        border-radius: 16px;
+        padding: 24px;
+        text-align: center;
+        width: 100%;
+        max-width: 375px;
+    }
+
+    .circle {
+        background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+        border: solid 1px hsl(217, 12%, 63%);
+        padding: 20px;
+        border-radius: 30px;
+        width: 15px;
+        height: 15px;
+    }
+
+    .globalContainer h1 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    .globalContainer p {
+        color: hsl(217, 12%, 63%);
+        margin-bottom: 16px;
+    }
+
+    .boxContainer ul li {
+        display: inline-block;
+        padding: 15px;
+        width: 60px;
+        height: 60px;
+        margin: 0 5px;
+    }
+
+    .circleButton {
+        width: 60px;
+        height: 60px;
+        background-color: hsl(213, 19%, 18%);
+        margin: 5px;
+        padding: 10px;
+        border: solid 1px hsl(217, 12%, 63%);
+        border-radius: 50px;
+        font-size: 1.8rem;
+        color: hsl(217, 12%, 63%);
+        font-weight: 700;
+        line-height: 32px;
+        float: left;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .circleButton:hover {
+        background: hsl(25, 97%, 53%);
+        color: hsl(216, 12%, 8%);
+    }
+    .circleButton:selected {
+        background: hsl(0, 0%, 1003%);
+        color: hsl(216, 12%, 8%);
+    }
+
+    .sendButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(25, 97%, 53%);
+        color: (217, 12%, 63%);
+        padding: 20px 120px;
+        border: none;
+        border-radius: 25px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+.secondaryContainer {
+    width: 375px;
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    border: solid 1px hsl(217, 12%, 63%);
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 60px;
+
+    circleButton:clicked {
+        background: hsl(213, 19%, 18%);
+        border: solid 1px hsl(217, 12%, 63%);
+        border-radius: 50px;
+        font-size: 1rem;
+        font-weight: 400;
+        color: hsl(25, 97%, 53%);
+        padding: 15px 0;
+        margin: 20px 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        color: hsl(0, 0%, 100%);
+    }
+
+    p {
+        font-size: 1.5rem;
+        color: hsl(217, 12%, 63%);
+    }
+}

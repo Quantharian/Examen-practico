@@ -10,22 +10,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;1,100&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/favicon-32x32.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./guide.css" />
-    <script src="./index.js" type="module" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js" type="module" defer></script>
 </head>
 
 <body>
-    <img src="./assets/icon-star.svg" alt="estrella" />
-    <h1>¿Como lo hicimos?</h1>
-    <p>Por favor haznos saber cómo lo hicimos con tu solicitud de soporte.</p>
-    <p>¡Todos los comentarios son bienvenidos para ayudarnos a mejorar nuestra oferta!</p>
-    <div class="container">
-        <button></button>
-        <button></button>
-        <button></button>
-        <button></button>
-    </div>
+    <div class="globalContainer">
 
+        <img class="circle" src="./assets/icon-star.svg" alt="estrella" />
+        <h1>¿Como lo hicimos?</h1>
+        <p>Por favor haznos saber cómo lo hicimos con tu solicitud de soporte.</p>
+        <p>¡Todos los comentarios son bienvenidos para ayudarnos a mejorar nuestra oferta!</p>
+        <div class="boxContainer">
+            <button class="circleButton" value="1">1</button>
+            <button class="circleButton" value="2">2</button>
+            <button class="circleButton" value="3">3</button>
+            <button class="circleButton" value="4">4</button>
+            <button class="circleButton" value="5">5</button>
+        </div>
+        <button class="sendButton">Enviar</button>
+    </div>
+    <div class="secondaryContainer" style="display: none;">
+        <img src="./assets/illustration-thank-you.svg"
+            alt="imagen de una ilustración móvil con documentos que entran y salen" />
+        <div class="clickedContainer">Seleccionaste X de 5</div>
+        <h1>¡Gracias!</h1>
+        <p>Agradecemos que te hayas tomado el tiempo de la calificación.
+            <br>Si alguna vez necesitas más ayuda, no dudes en volver a ponerte en contacto con nosotros.
+        </p>
+    </div>
+    </hero>
 </body>
 
 </html>

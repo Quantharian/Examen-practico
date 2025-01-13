@@ -1,15 +1,23 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const container = document.querySelector('.container');
+const ratingButtons = document.querySelectorAll('.boxContainer button');
+const submitButton = document.querySelector('.sendButton');
+const feedbackCard = document.querySelector('.globalContainer');
+const thankYouCard = document.querySelector('.secondaryContainer');
+const selectedRatingText = document.querySelector('.clickedContainer');
+let selectedRating = null;
 
-    for (let i = 1; i <= 5; i++) {
-        const button = document.createElement('button');
-        button.textContent = i;
-        button.value = i;
-        button.addEventListener('click', () => {
-            const buttons = container.querySelectorAll('button');
-            buttons.forEach((btn) => (btn.disabled = false));
-            button.disabled = true;
-        });
-        container.appendChild(button);
+ratingButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+        ratingButtons.forEach((btn) => btn.classList.remove('active'));
+        button.classList.add('active');
+        selectedRating = button.textContent;
+    });
+});
+
+submitButton.addEventListener('click', () => {
+    if (selectedRating) {
+        feedbackCard.style.display = 'none';
+
+        thankYouCard.style.display = 'block';
+        selectedRatingText.textContent = `Seleccionaste ${selectedRating} de 5`;
     }
 });
